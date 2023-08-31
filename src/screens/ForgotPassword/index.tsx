@@ -28,15 +28,12 @@ export function ForgotPasswordScreen({ navigation }: { navigation: any }) {
   return (
     <Container>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
-        <BackButtonWrapper>
-          <BackButton onPress={() => setNotSavedDataMsg(true)} />
-        </BackButtonWrapper>
         <TitleWrapper>
           <Title>Redefinir senha</Title>
         </TitleWrapper>
         <TitleWrapper>
-          <Subtitle>Preencha com seu email abaixo para</Subtitle>
-          <Subtitle>redefinir sua senha</Subtitle>
+          <Subtitle>Insira seu endereço de email e eviaremos</Subtitle>
+          <Subtitle>um código para redefinir sua senha!</Subtitle>
         </TitleWrapper>
         <TextFieldWrapper>
           <TextField

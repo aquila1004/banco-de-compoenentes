@@ -13,10 +13,10 @@ interface Props {
 export const InputView = styled.View<Props>`
   display: flex;
   flex-direction: row;
-  height: 50px; 
   width: ${(props) => (props.small ? wp("50%") : wp("90%"))}px;
-  background-color: #F1F0F0; /* Cor de fundo cinza mais claro */
-  border-radius: 10px; /* Borda redonda com raio de 10 pixels */
+  background-color: rgb(255, 255, 255); 
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 1px; 
 `;
 export const DynamicInputView = styled.View<Props>`
   display: flex;
@@ -24,7 +24,8 @@ export const DynamicInputView = styled.View<Props>`
   border-bottom-width: 0.8px;
   border-bottom-right-radius: 10px;
   border-bottom-color: #333333;
-  background-color: #222222;
+  background-color: #222222
+  ;
   width: ${(props) => wp(props.width!)}px;
  
 `;

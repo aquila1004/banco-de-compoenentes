@@ -10,11 +10,12 @@ export const Container = styled.View`
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  
  
 `;
 export const Title = styled.Text`
   font-size: ${RFValue(40)}px;
-  color: #1E76DD;
+  color: rgba(184, 127, 61, 1);
   margin-top: ${RFValue(40)}px;
   margin-bottom: ${RFValue(40)}px;
 `;
@@ -42,5 +43,5 @@ export const ForgotPasswordContainer = styled.TouchableOpacity`
 
 `;
 export const ForgotPasswordContent = styled.Text`
-color : #7B8794;
+color : rgba(184, 127, 61, 1);
 `;

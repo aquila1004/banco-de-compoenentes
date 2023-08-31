@@ -45,15 +45,12 @@ export function ForgotPasswordConfirm({
   return (
     <Container>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
-        <BackButtonWrapper>
-          <BackButton onPress={() => setNotSavedDataMsg(true)} />
-        </BackButtonWrapper>
         <TitleWrapper>
           <Title>Redefinir senha</Title>
         </TitleWrapper>
         <TitleWrapper>
-          <Subtitle>Preencha com seus dados abaixo para</Subtitle>
-          <Subtitle>redefinir sua senha</Subtitle>
+          <Subtitle>Digite abaixo o código que foi enviado para o</Subtitle>
+          <Subtitle>seu email e digite também uma nova senha!</Subtitle>
         </TitleWrapper>
         <TextFieldWrapper>
           <TextField

@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import { ActivityIndicator, Platform } from 'react-native';
-import Background from '../components/Background';
-import { theme } from '../core/theme';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function AuthLoadingScreen({ navigation }) {

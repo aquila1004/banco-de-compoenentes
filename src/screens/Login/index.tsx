@@ -64,7 +64,7 @@ export function LoginScreen({ navigation }: { navigation: any })  {
           <FontAwesome
             name={showPassword ? "eye-slash" : "eye"}
             size={22}
-            color="#2F80ED"
+            color="#ed9a2e"
           />
         </TouchableOpacity>
       </TextFieldWrapper>
@@ -72,7 +72,7 @@ export function LoginScreen({ navigation }: { navigation: any })  {
         <BlueButton buttonText="Entrar" action={_onLoginPressed} />
         <Spinner visible={isLoading} />
       </ButtonWrapper>
-      <RegisterContainer onPress={() => navigation.navigate("RegisterRole")}>
+      <RegisterContainer onPress={() => navigation.navigate("RegisterScreen")}>
         <RegisterContent>Ainda não tem uma conta? Cadastre-se</RegisterContent>
       </RegisterContainer>
       <ForgotPasswordContainer onPress={() => navigation.navigate("ForgotPasswordScreen")}>

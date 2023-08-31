@@ -30,7 +30,7 @@ export const BackButtonWrapper = styled.View`
 `;
 export const Title = styled.Text`
   font-size: ${RFValue(25)}px;
-  color: #1E76DD;
+  color:rgba(0, 0, 0, 1);
   top: ${RFValue(getStatusBarHeight() + 15)}px;
 `;
 export const TitleWrapper = styled.View`

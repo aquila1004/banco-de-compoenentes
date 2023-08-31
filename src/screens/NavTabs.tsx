@@ -5,8 +5,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const Tab = createBottomTabNavigator();
 
 const NavTabs = ({ userRole }) => {
-  const isPersonal = userRole === '1';
-
   return (
     <Tab.Navigator>
      
