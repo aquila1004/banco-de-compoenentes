@@ -9,7 +9,7 @@ import {
   Title,
   TextFieldWrapper,
   Subtitle,
-  BackButtonWrapper,
+  Divider,
   TitleWrapper,
 } from "./styles";
 export function ForgotPasswordConfirm({

@@ -1,6 +1,5 @@
 import React, { memo, useState } from "react";
 import { BlueButton } from "../../components/BlueButton";
-import { BackButton } from "../../components/BackButton";
 import { TextField } from "../../components/TextFiel";
 import { MessageBalloon } from "../../components/MessageBallon";
 import Spinner from "react-native-loading-spinner-overlay";
@@ -10,8 +9,9 @@ import {
   Title,
   TextFieldWrapper,
   Subtitle,
-  BackButtonWrapper,
+  Divider,
   TitleWrapper,
+  ButtonWrapper
 } from "./styles";
 
 export function ForgotPasswordScreen({ navigation }: { navigation: any }) {
@@ -44,7 +44,9 @@ export function ForgotPasswordScreen({ navigation }: { navigation: any }) {
             value={email.value}
           />
         </TextFieldWrapper>
+        <ButtonWrapper>
         <BlueButton buttonText=" Enviar" action={_onSendPressed} />
+        </ButtonWrapper>
         <Spinner visible={isLoading} />
       </ScrollView>
       {notSavedDataMsg && (

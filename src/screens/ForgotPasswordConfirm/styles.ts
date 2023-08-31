@@ -1,6 +1,10 @@
 import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
 import { getStatusBarHeight } from 'react-native-status-bar-height'
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 
 export const Container = styled.View`
   background-color: #fff;
@@ -36,4 +40,11 @@ export const Title = styled.Text`
 export const TitleWrapper = styled.View`
   margin-bottom: 30px;
   align-items: center;
+`;
+
+export const Divider = styled.View`
+  height: ${RFValue(20)}px;
+  width: ${wp("100%")}px;
+  border-bottom-width: 1px;
+  border-bottom-color: lightgray;
 `;

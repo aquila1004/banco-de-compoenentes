@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Personal",
-    "slug": "personal-frontend",
+    "name": "Geoprospect",
+    "slug": "Geoprospect",
     "version": "0.0.5",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
