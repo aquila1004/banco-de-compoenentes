@@ -32,12 +32,8 @@ export function ForgotPasswordConfirm({
   const [alertPassword, setAlertPassword] = useState(false);
   const [alertMinPassword, setAlertMinPassword] = useState(false);
 
-
-  
-
-  const _onSendPressed = async () => {+
-    
-    navigation.navigate("ForgotPasswordConfirm");
+  const _onSendPressed = async () => {
+    +navigation.navigate("ForgotPasswordConfirm");
   };
 
   return (

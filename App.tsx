@@ -2,6 +2,7 @@ import React from "react";
 import { Provider } from "react-native-paper";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import Navbar from "./src/screens/Navbar";
 import { theme } from "./src/core/theme";
 import {
   LoginScreen,
@@ -26,6 +27,7 @@ export default function App() {
             name="ForgotPasswordConfirm"
             component={ForgotPasswordConfirm}
           />
+          <Stack.Screen name="Navbar" component={Navbar} />
           <Stack.Screen
             name="ForgotPasswordScreen"
             component={ForgotPasswordScreen}

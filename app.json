@@ -12,7 +12,7 @@
       "web"
     ],
     "splash": {
-      "image": "./assets/icon.png",
+      "image": "./assets/Splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

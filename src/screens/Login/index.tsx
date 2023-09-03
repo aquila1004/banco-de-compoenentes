@@ -1,10 +1,9 @@
 import { TouchableOpacity, StyleSheet } from "react-native";
-import React, { memo, useState } from 'react';
+import React, { memo, useState } from "react";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { BlueButton } from "../../components/BlueButton";
 import { TextField } from "../../components/TextFiel";
-
-import Spinner from 'react-native-loading-spinner-overlay';
+import Spinner from "react-native-loading-spinner-overlay";
 
 import {
   Container,
@@ -17,16 +16,15 @@ import {
   ForgotPasswordContent,
 } from "./styles";
 
-
-export function LoginScreen({ navigation }: { navigation: any })  {
-  const [email, setEmail] = useState({ value: '', error: '' });
-  const [password, setPassword] = useState({ value: '', error: '' });
+export function LoginScreen({ navigation }: { navigation: any }) {
+  const [email, setEmail] = useState({ value: "", error: "" });
+  const [password, setPassword] = useState({ value: "", error: "" });
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const _onLoginPressed = async () => {
-    navigation.navigate("RegisterRole");
+    navigation.navigate("Navbar");
   };
 
   const toggleShowPassword = () => {
@@ -40,10 +38,10 @@ export function LoginScreen({ navigation }: { navigation: any })  {
         <TextField
           placeholder="E-mail"
           textContentType="emailAddress"
-          keyboardType="email-address" 
+          keyboardType="email-address"
           autoComplete="email"
           autoCapitalize="none"
-          onChange={(text) => setEmail({ value: text, error: '' })}
+          onChange={(text) => setEmail({ value: text, error: "" })}
           value={email.value}
         />
       </TextFieldWrapper>
@@ -54,7 +52,7 @@ export function LoginScreen({ navigation }: { navigation: any })  {
           autoCapitalize="none"
           textContentType="password"
           autoComplete="password"
-          onChange={(text) => setPassword({ value: text, error: '' })}
+          onChange={(text) => setPassword({ value: text, error: "" })}
           value={password.value}
         />
         <TouchableOpacity
@@ -75,10 +73,11 @@ export function LoginScreen({ navigation }: { navigation: any })  {
       <RegisterContainer onPress={() => navigation.navigate("RegisterScreen")}>
         <RegisterContent>Ainda não tem uma conta? Cadastre-se</RegisterContent>
       </RegisterContainer>
-      <ForgotPasswordContainer onPress={() => navigation.navigate("ForgotPasswordScreen")}>
+      <ForgotPasswordContainer
+        onPress={() => navigation.navigate("ForgotPasswordScreen")}
+      >
         <ForgotPasswordContent>Esqueci Minha Senha</ForgotPasswordContent>
       </ForgotPasswordContainer>
-     
     </Container>
   );
 }

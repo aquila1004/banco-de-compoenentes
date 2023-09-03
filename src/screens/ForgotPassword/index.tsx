@@ -10,7 +10,7 @@ import {
   TextFieldWrapper,
   Subtitle,
   TitleWrapper,
-  ButtonWrapper
+  ButtonWrapper,
 } from "./styles";
 
 export function ForgotPasswordScreen({ navigation }: { navigation: any }) {
@@ -44,7 +44,7 @@ export function ForgotPasswordScreen({ navigation }: { navigation: any }) {
           />
         </TextFieldWrapper>
         <ButtonWrapper>
-        <BlueButton buttonText=" Enviar" action={_onSendPressed} />
+          <BlueButton buttonText=" Enviar" action={_onSendPressed} />
         </ButtonWrapper>
         <Spinner visible={isLoading} />
       </ScrollView>
