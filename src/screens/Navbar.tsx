@@ -2,6 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import IconTeste from '../components/IconTeste';
 import IconTeste2 from '../components/IconTeste2';
+
 const Tab = createBottomTabNavigator();
 
 const Navbar = ({ }) => {
@@ -14,7 +15,7 @@ const Navbar = ({ }) => {
         component={IconTeste}
         options={{
           tabBarIcon: ({ focused }) => (
-            <IconTeste fill={focused ? 'rgba(150, 150, 150, 1)' : 'black'} width={40} height={40} />
+            <IconTeste fill={focused ? 'rgba(150, 150, 150, 1)' : 'black'} width={30} height={30} />
           ),
           headerShown: false,
         }}
@@ -25,7 +26,7 @@ const Navbar = ({ }) => {
         component={IconTeste}
         options={{
           tabBarIcon: ({ focused }) => (
-            <IconTeste2 fill={focused ? '#6d757e' : 'black'} width={32} height={32} />
+            <IconTeste2 fill={focused ? '#6d757e' : 'black'} width={30} height={30} />
           ),
           headerShown: false,
         }}
