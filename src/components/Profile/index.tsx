@@ -7,7 +7,7 @@ export function ProfileIcon() {
   
   return (
     <ProfileIconView>
-      <Touchable onPress={() => navigation.navigate("Dashboard")}>
+      <Touchable onPress={() => console.log('')}>
         <Octicons name="person" size={32} color="#3a5ccb" />
       </Touchable>
     </ProfileIconView>
