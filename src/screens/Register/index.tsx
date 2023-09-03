@@ -11,7 +11,7 @@ import {
   RegisterContainer,
   RegisterContent,
 } from "./styles";
-import Toast from "../../components/Toast";
+
 import { TextField } from "../../components/TextFiel";
 import { MessageBalloon } from "../../components/MessageBallon";
 
@@ -86,7 +86,6 @@ const RegisterScreen = ({ navigation, route }) => {
           </RegisterContent>
         </RegisterContainer>
       </ScrollView>
-      <Toast message={error} onDismiss={() => setError("")} />
       {notSavedDataMsg && (
         <MessageBalloon
           hasGoBackButton

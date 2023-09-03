@@ -6,11 +6,8 @@ import { theme } from "./src/core/theme";
 import {
   LoginScreen,
   RegisterScreen,
-  RegisterRole,
   ForgotPasswordScreen,
   ForgotPasswordConfirm,
-  AuthLoadingScreen,
-  Navbar,
 } from "./src/screens";
 
 const Stack = createStackNavigator();
@@ -23,14 +20,8 @@ export default function App() {
           initialRouteName="AuthLoadingScreen"
           screenOptions={{ headerShown: false }}
         >
-          <Stack.Screen
-            name="AuthLoadingScreen"
-            component={AuthLoadingScreen}
-          />
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
-          <Stack.Screen name="RegisterRole" component={RegisterRole} />
-          <Stack.Screen name="Dashboard" component={Navbar} />
           <Stack.Screen
             name="ForgotPasswordConfirm"
             component={ForgotPasswordConfirm}

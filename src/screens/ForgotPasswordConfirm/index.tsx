@@ -1,6 +1,5 @@
 import React, { memo, useState } from "react";
 import { BlueButton } from "../../components/BlueButton";
-import { BackButton } from "../../components/BackButton";
 import { TextField } from "../../components/TextFiel";
 import { MessageBalloon } from "../../components/MessageBallon";
 import { ScrollView, StyleSheet } from "react-native";
@@ -9,7 +8,6 @@ import {
   Title,
   TextFieldWrapper,
   Subtitle,
-  Divider,
   TitleWrapper,
 } from "./styles";
 export function ForgotPasswordConfirm({

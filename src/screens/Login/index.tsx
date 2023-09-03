@@ -3,7 +3,7 @@ import React, { memo, useState } from 'react';
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { BlueButton } from "../../components/BlueButton";
 import { TextField } from "../../components/TextFiel";
-import Toast from "../../components/Toast";
+
 import Spinner from 'react-native-loading-spinner-overlay';
 
 import {
@@ -78,7 +78,7 @@ export function LoginScreen({ navigation }: { navigation: any })  {
       <ForgotPasswordContainer onPress={() => navigation.navigate("ForgotPasswordScreen")}>
         <ForgotPasswordContent>Esqueci Minha Senha</ForgotPasswordContent>
       </ForgotPasswordContainer>
-      <Toast message={error} onDismiss={() => setError('')} />
+     
     </Container>
   );
 }

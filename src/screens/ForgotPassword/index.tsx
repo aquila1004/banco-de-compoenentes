@@ -9,7 +9,6 @@ import {
   Title,
   TextFieldWrapper,
   Subtitle,
-  Divider,
   TitleWrapper,
   ButtonWrapper
 } from "./styles";
