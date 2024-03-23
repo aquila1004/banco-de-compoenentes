@@ -14,6 +14,7 @@ import {
   RegisterContent,
   ForgotPasswordContainer,
   ForgotPasswordContent,
+  TpjImage
 } from "./styles";
 
 export function LoginScreen({ navigation }: { navigation: any }) {
@@ -33,7 +34,8 @@ export function LoginScreen({ navigation }: { navigation: any }) {
 
   return (
     <Container>
-      <Title>Login</Title>
+    <TpjImage
+        source={require("../../assets/tpj.png")} />
       <TextFieldWrapper>
         <TextField
           placeholder="E-mail"
@@ -62,7 +64,7 @@ export function LoginScreen({ navigation }: { navigation: any }) {
           <FontAwesome
             name={showPassword ? "eye-slash" : "eye"}
             size={22}
-            color="#ed9a2e"
+            color="#ed2e2e"
           />
         </TouchableOpacity>
       </TextFieldWrapper>

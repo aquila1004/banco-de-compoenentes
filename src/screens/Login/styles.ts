@@ -15,7 +15,7 @@ export const Container = styled.View`
 `;
 export const Title = styled.Text`
   font-size: ${RFValue(40)}px;
-  color: rgba(184, 127, 61, 1);
+  color: rgb(255,0,0);
   margin-top: ${RFValue(40)}px;
   margin-bottom: ${RFValue(40)}px;
 `;
@@ -43,5 +43,12 @@ export const ForgotPasswordContainer = styled.TouchableOpacity`
 
 `;
 export const ForgotPasswordContent = styled.Text`
-color : rgba(184, 127, 61, 1);
+color :rgb(255,0,0);
+`;
+
+export const TpjImage = styled.Image`
+  margin: ${RFValue(60)}px;
+  margin-top: ${RFValue(0)}px;
+  width: ${RFValue(150)}px;
+  height: ${RFValue(150)}px;
 `;

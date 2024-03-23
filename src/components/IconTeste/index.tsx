@@ -4,8 +4,8 @@ import { Image } from "react-native";
 
 const IconTeste = (props: SvgProps) => (
   <Image
-    source={require("../../assets/IconTeste.png")}
-    style={{ width: 30, height:30 }} 
+    source={require("../../assets/HomeIcon.png")}
+    style={{ width: 30, height:30 }}
   />
 );
 

@@ -1,11 +1,11 @@
 import * as React from "react";
 import  { SvgProps, } from "react-native-svg";
 import { Image } from "react-native";
-const IconTeste2 = (props: SvgProps) => (
+const AddIcon = (props: SvgProps) => (
   <Image
-    source={require("../../assets/cafe.png")}
+    source={require("../../assets/add.png")}
     style={{ width: 30, height: 30 }} 
   />
 );
 
-export default IconTeste2;
+export default AddIcon;

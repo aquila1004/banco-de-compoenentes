@@ -150,14 +150,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   rowStyle: {
-    backgroundColor: "#31304fb5",
+    backgroundColor: "#4f3030b5",
     height: 55,
     borderBottomWidth: 0,
   },
   dropdownStyle: {
     width: '70%',
     borderRadius: 10,
-    backgroundColor: "#1671d9",
+    backgroundColor: "#ffca1b",
     left: 60,
   },
 });
